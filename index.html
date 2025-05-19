@@ -50,7 +50,7 @@
     async function obterNumeros() {
       try {
         console.log('Iniciando requisição ao webhook...');
-        const response = await fetch('http://localhost:5678/webhook/Andrei11', {
+        const response = await fetch('http://srvfrigo.work/webhook/presselaulajon', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json'
@@ -74,7 +74,7 @@
       try {
         const numeros = await obterNumeros();
         const numeroAleatorio = numeros[Math.floor(Math.random() * numeros.length)];
-        const url = `https://api.whatsapp.com/send?phone=${numeroAleatorio}&text=Oi,%20quero%20a%20sua%20receita!`;
+        const url = `https://api.whatsapp.com/send?phone=${numeroAleatorio}&text=Oi,%20quero%20conversar%20com%20você!`;
         console.log('Redirecionando para:', url);
         window.location.href = url;
       } catch (error) {
@@ -95,7 +95,7 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'IDIDIDIDID');
+    fbq('init', '1240706850959149');
     fbq('track', 'Pageview');
   </script>
 
